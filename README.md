@@ -58,4 +58,3 @@ A lower accuracy with higher recall is **expected and acceptable**.
 
 ---
 
-## Project Structure
