@@ -32,11 +32,13 @@ Original target column name:
 
 ---
 
-## Approach
-- Logistic Regression (baseline model)
-- Feature scaling using StandardScaler
-- Class imbalance handled using `class_weight="balanced"`
-- Custom decision threshold to improve recall
+### Model Approach
+
+- XGBoost Classifier is used as the primary model for predicting credit card default.
+- Class imbalance is handled using the `scale_pos_weight` parameter to assign higher importance to the defaulter (minority) class.
+- Since XGBoost is a tree-based model, feature scaling is not required.
+- The model generates probability-based predictions, and a custom decision threshold is applied to improve recall for defaulters.
+
 
 ---
 
